@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Data</title>
+  <link rel="stylesheet" href="../MovieData/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Movie Data</h1>
+    <button id="newMovieButton">Add new movie!</button>
+  </header>
+  <main>
+    <div class="movie-container">
+      <!-- The movie cards will be rendered here -->
+    </div>
+    <div class="controls">
+        <label for="sort">Sort by:</label>
+        <select id="sort">
+          <option value="year">Year</option>
+          <option value="rating">Rating</option>
+          <option value="runtime">Runtime</option>
+        </select>
+      </div>     
+  </main>
+  <section class="add-movie-form">
+    <form id="add-movie-form">
+        <h2>Add a new movie</h2>
+        <label for="title">Title:</label>
+        <input type="text" id="title" required>
+        <label for="plot">Plot:</label>
+        <textarea id="plot" required></textarea>
+        <label for="cast">Cast (comma separated):</label>
+        <input type="text" id="cast" required>
+        <label for="runtime">Runtime (minutes):</label>
+        <input type="number" id="runtime" required>
+        <label for="rating">Rating:</label>
+        <input type="number" step="0.1" id="rating" required>
+        <label for="year">Year:</label>
+        <input type="number" id="year" required>
+        <button type="submit">Add movie</button>
+      </form>
+
+
+  </section>
+  <script src="../MovieData/scripts.js"></script>
+</body>
+</html>
